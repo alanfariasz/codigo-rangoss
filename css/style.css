@@ -1,0 +1,165 @@
+/* Globais */
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+/* Header */
+
+.header {
+    background-color: #000000;
+    /* margin-bottom: 100px;
+    padding-bottom: 50px; */
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.logo {
+    height: 120px;
+    margin-left: 25px;
+}
+
+.header_menu {
+    text-align: right;
+    margin-right: 25px;
+    padding-top: 35px;
+}
+
+.header_menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.header_menu .home_ativo {
+    color: #FFC337;
+}
+
+.icones {
+    color: #FFC337;
+    width: 40px;
+    height: 40px;
+    padding-left: 15px;
+}
+
+.header_menu a:hover {
+    color: #FFC337;
+}
+
+
+/* Main  */
+
+/* Sessão Carrossel */
+.sessao_carrossel {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+}
+
+.slides {
+    width: 400%;
+    height: 800px;
+    display: flex;
+}
+
+input {
+    z-index: 1;
+}
+
+.imagem {
+    width: 25%;
+    position: relative;
+}
+
+.imagem img{
+    width: 1024px;
+    /* height: 100%; */
+}
+
+#botao_1:checked ~ .primeira {
+    margin-left: 0;
+}
+
+#botao_2:checked ~ .primeira {
+    margin-left: -25%;
+}
+
+#botao_3:checked ~ .primeira {
+    margin-left: -50%;
+}
+
+#botao_4:checked ~ .primeira {
+    margin-left: -75%;
+}
+/* Sessão Apresentação */
+
+.sessao_apresentacao {
+    background: linear-gradient(#efb312, #65480f);
+}
+
+/* Sessão Delivery */
+
+/* Sessão Parcerias */
+
+/* Footer */
+
+.footer {
+    background-color: #000000;
+    /* margin-bottom: 100px;
+    padding-bottom: 50px; */
+    font-size: 20px;
+}
+
+.central p{
+    font-size: 18px;
+
+}
+.central {
+    color: #FFFFFF;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+#linha-vertical{
+    height: 350px;
+    border-right: 1px solid #FFFFFF;
+    margin: 30px 0 15px 0;
+
+}
+
+.bloco_3 a{
+    color: #FFFFFF;
+    text-decoration: none;
+  
+}
+
+.bloco_3 p{
+    margin: 15px 0;
+}
+
+.logo-footer{
+    padding-left: 25px;
+    height: 150px;
+}
+.bloco_1{
+     padding-left: 150px ;
+    
+}
+/* .bloco_2
+
+} */
+.bloco_3{
+    padding-right: 150px;
+}
