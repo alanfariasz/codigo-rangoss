@@ -10,7 +10,7 @@ img {
 } 
 
 .background-gradiente {
-    background: linear-gradient(red, purple);
+    background: linear-gradient(#efb312, #65480f);
 }
     
 /* Header  */
