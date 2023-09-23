@@ -5,13 +5,18 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
 }
+img {
+    max-width: 100%;
+} 
 
-/* Header */
+.background-gradiente {
+    background: linear-gradient(red, purple);
+}
+    
+/* Header  */
 
 .header {
     background-color: #000000;
-    /* margin-bottom: 100px;
-    padding-bottom: 50px; */
     font-size: 20px;
     display: flex;
     flex-direction: row;
@@ -58,29 +63,37 @@
 /* Sessão Carrossel */
 .sessao_carrossel {
     width: 100%;
-    height: 800px;
+    height: 550px;
     overflow: hidden;
     margin: 0 auto;
     display: flex;
 }
 
 .slides {
-    width: 400%;
-    height: 800px;
+    width: auto;
+    height: 550px;
     display: flex;
+
 }
 
 input {
-    z-index: 1;
+    /* z-index: 1; */
+    display: none;
 }
 
-.imagem {
-    width: 25%;
-    position: relative;
+
+.imagem_carrossel {
+   
+    height: 550px;
+    width: 3000px;
+    /* position: relative; */
+    
 }
 
-.imagem img{
-    width: 1024px;
+.imagem_carrossel img{
+    height: 550px;
+    width: auto;
+   margin-left: 0;
     /* height: 100%; */
 }
 
@@ -99,16 +112,189 @@ input {
 #botao_4:checked ~ .primeira {
     margin-left: -75%;
 }
-/* Sessão Apresentação */
 
-.sessao_apresentacao {
-    background: linear-gradient(#efb312, #65480f);
+.estilo_botao{
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1px;
+    align-content: end;
+    justify-content: center;
 }
+
+.estilo_botao label {
+    border: 5px solid gray;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: gray;
+    margin-bottom: 10px;
+}
+
+/* Sessão Apresentação */
+.sessao_apresentacao {
+    /* background: linear-gradient(#efb312, #65480f); */
+    /* background: linear-gradient(#efb312, #61460f); */
+    padding: 15px 0;
+}
+.parte_um {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.imagem_menu {
+    width: 800px;
+    margin-left:100px;
+    border: #65480f solid 5px;
+}
+
+
+
+.botao_menu {
+    text-decoration: none;
+    color: #000;
+    background-color: #f5bc21;
+    padding: 15px 70px;
+    border-radius: 40px;
+    font-size: 35px;
+    display: block;
+    width: 95px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: transform 0.5s ease;
+}
+.botao_menu:hover{
+    transform: rotate(360deg);
+    background-color: fuchsia;
+}
+
+.texto_chamado {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.conheca{
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 420px);
+    gap: 25px;
+    margin-left: 30px;
+
+}
+
+.imagens img{
+    width: 401.656px;
+    height: 290.859px;
+    border: 5px #55390e solid;
+}
+
 
 /* Sessão Delivery */
 
-/* Sessão Parcerias */
+.sessao_delivery {
+    /* background-color: #65480f; */
+    background-image: url(/img/pngwing.com\ \(4\).png);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px;
 
+}
+
+.foto_delivery{
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+.span_delivery{
+    display: block;
+    margin:45px 0 ;
+    padding-left: 120px;
+}
+
+.temos_delivery {
+    grid-column: 2;
+    padding: 150px;
+}
+
+.temos_delivery h2 {
+    color: #FFFFFF;
+    font-size: 50px;
+    justify-content: center;
+}
+
+.peca_ja {
+    background: #f5bc21;
+    font-size: 48px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 20px 80px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+
+/* Sessão Parcerias */
+.parceiros {
+    background-color: #231F1E;
+    height: auto;
+    /* height: 720px; */
+    /* width: 1024px; */
+    width: 100%;
+    padding-top: 20px;
+}
+
+.mano {
+    color: #fff;
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+    
+}
+
+.logo1 {
+    width: 200px;
+    padding: 50px;
+}
+
+.logo2 {
+    width: 200px;
+    padding: 50px;
+}
+
+.logo3 {
+    width: 200px;
+    padding: 50px;
+}
+ 
+
+
+.logo4 {
+    width: 200px;
+    padding: 50px;
+}
+
+.logo5 {
+    width: 200px;
+    padding: 50px;
+}
+
+.logo6 {
+    width: 200px;
+    padding: 50px;
+}
 /* Footer */
 
 .footer {
@@ -130,7 +316,6 @@ input {
     justify-content: space-between;
 
 }
-
 
 #linha-vertical{
     height: 350px;
